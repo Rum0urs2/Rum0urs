@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2d3748",
+              "background-light": "#ffffff",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              "serif": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Newsreader', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .prose-custom p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+<title>Technical Projects and Skills | Shubham Amrut Habib</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="max-w-[850px] mx-auto px-6 lg:px-8">
+<header class="flex flex-col md:flex-row items-baseline justify-between py-12 border-b border-slate-100 dark:border-slate-800 mb-16">
+<div class="flex items-baseline gap-2">
+<h1 class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+                    Shubham Amrut Habib
+                </h1>
+</div>
+<nav class="flex flex-wrap items-center gap-6 mt-6 md:mt-0">
+<div class="flex gap-6 text-sm font-medium">
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="research.html">Research</a>
+<a class="text-slate-900 dark:text-white border-b border-slate-900 dark:border-white" href="#top">Projects</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">CV</a>
+</div>
+<div class="flex items-center gap-4 pl-6 border-l border-slate-200 dark:border-slate-700">
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="Google Scholar">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</a>
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="ORCID">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</a>
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="GitHub">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="mb-20">
+<h2 class="text-4xl font-light mb-8 italic">Technical Projects and Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-3">
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        A collection of technical implementations focusing on stratospheric dynamics, machine learning applications in Earth system science, and experimental atmospheric instrumentation.
+                    </p>
+</div>
+<div class="md:col-span-1">
+<h3 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-4">Core Skills</h3>
+<ul class="text-sm space-y-2 text-slate-700 dark:text-slate-300 font-medium">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Python</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> MATLAB</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> netCDF4 / HDF5</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Google Earth Engine</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="space-y-20">
+<article class="group relative">
+<div class="flex flex-col gap-4 mb-4">
+<span class="text-[10px] font-mono tracking-widest text-primary uppercase">Atmospheric Dynamics</span>
+<h3 class="text-2xl font-medium group-hover:text-primary transition-colors">Brewer-Dobson Circulation Analysis</h3>
+</div>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6 text-lg">
+                    Quantitative investigation of the stratospheric meridional overturning circulation using NASA's MERRA-2 reanalysis data. The project employs the Transformed Eulerian Mean (TEM) framework to diagnose wave-driven transport and residual mean flow. Analysis focuses on long-term trends in stratospheric mass flux and its implications for trace gas distribution and climate sensitivity.
+                </p>
+<div class="flex items-center gap-6">
+<a class="inline-flex items-center gap-2 text-sm font-medium border-b border-slate-200 dark:border-slate-800 hover:border-primary hover:text-primary py-1 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">analytics</span>
+                        Technical Methodology
+                    </a>
+<span class="text-xs text-slate-400 font-mono italic">MERRA-2, TEM Framework, Python</span>
+</div>
+</article>
+<article class="group relative">
+<div class="flex flex-col gap-4 mb-4">
+<span class="text-[10px] font-mono tracking-widest text-primary uppercase">Machine Learning</span>
+<h3 class="text-2xl font-medium group-hover:text-primary transition-colors">LLM for Climate Science</h3>
+</div>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6 text-lg">
+                    Development of specialized Large Language Model (LLM) interfaces for interpreting complex climate datasets. By leveraging Google Earth Engine (GEE) multi-spectral datasets, the system facilitates natural language querying of geospatial anomalies and environmental trends. The architecture integrates vector embeddings of academic literature with real-time satellite observational data.
+                </p>
+<div class="flex items-center gap-6">
+<a class="inline-flex items-center gap-2 text-sm font-medium border-b border-slate-200 dark:border-slate-800 hover:border-primary hover:text-primary py-1 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">neurology</span>
+                        View GEE Integration
+                    </a>
+<span class="text-xs text-slate-400 font-mono italic">PyTorch, GEE, Transformers</span>
+</div>
+</article>
+<article class="group relative">
+<div class="flex flex-col gap-4 mb-4">
+<span class="text-[10px] font-mono tracking-widest text-primary uppercase">Experimental Physics</span>
+<h3 class="text-2xl font-medium group-hover:text-primary transition-colors">Gas Cloud Chamber Construction</h3>
+</div>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6 text-lg">
+                    Design and fabrication of a high-precision diffusion cloud chamber for visualizing ionizing radiation and aerosol nucleation. The project involved thermodynamic calculations for temperature gradient stabilization and the integration of a Peltier-based cooling system. Used as a pedagogical and research tool to demonstrate particle tracks in a supersaturated vapor environment.
+                </p>
+<div class="flex items-center gap-6">
+<a class="inline-flex items-center gap-2 text-sm font-medium border-b border-slate-200 dark:border-slate-800 hover:border-primary hover:text-primary py-1 transition-all" href="#">
+<span class="material-symbols-outlined text-lg">precision_manufacturing</span>
+                        Build Specifications
+                    </a>
+<span class="text-xs text-slate-400 font-mono italic">Thermodynamics, Instrumentation</span>
+</div>
+</article>
+</div>
+<section class="mt-32 pt-16 border-t border-slate-100 dark:border-slate-800">
+<h3 class="text-xl font-medium mb-8">Technical Expertise</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+<div>
+<h4 class="font-semibold text-slate-900 dark:text-slate-100 mb-3 uppercase tracking-wider text-[10px]">Data &amp; Analysis</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Expertise in netCDF4 and HDF5 data structures, multi-dimensional array processing, and climate reanalysis products (MERRA-2, ERA5).</p>
+</div>
+<div>
+<h4 class="font-semibold text-slate-900 dark:text-slate-100 mb-3 uppercase tracking-wider text-[10px]">Computation</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Advanced scientific programming in Python and MATLAB. Experience with high-performance computing clusters and cloud-based geospatial platforms.</p>
+</div>
+<div>
+<h4 class="font-semibold text-slate-900 dark:text-slate-100 mb-3 uppercase tracking-wider text-[10px]">Modeling</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Implementation of atmospheric diagnostic frameworks, including Transformed Eulerian Mean equations and radiative-convective models.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="mt-32 pt-12 border-t border-slate-100 dark:border-slate-900 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-6">
+<p>© 2024 Shubham Amrut Habib. Built for Atmospheric Research.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="hover:text-primary transition-colors" href="#">ORCID</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+</footer>
+</div>
+<div class="fixed top-0 right-0 -z-10 w-1/3 h-screen opacity-10 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-l from-primary/5 to-transparent"></div>
+<img alt="Atmospheric visualization" class="w-full h-full object-cover mix-blend-overlay grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQI9LfuSuAZ3ViZJhOLOCDfaGiQTLokX9i1-ZbK81C2FbnSPdHfSdiIY2guYPok4rwsWKMxBwu1N1deGSiAhIoBRkLCqo323UKIXN3JgfG0IC1Mu4oJEwqBjdYGqS_nwixCWp9O_Iv-EuB92-6x2-AH1O-xhCZJECrrYmpRE6tHGIIHUF90vy69PuYe7K6gbUY0DWn5J_e74jtexnQH9Ph-3SpNd39-xPIRXcuosph5_k9M-GOVh_8SSgCh1l2fWoFdsh87zBm2pq"/>
+</div>
+
+</body></html>

@@ -1,68 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        /* This is the "CSS" - it makes the site look nice */
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2d3748",
+              "background-light": "#ffffff",
+              "background-dark": "#0f172a",
+            },
+            fontFamily: {
+              "serif": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #f4f4f9;
+            font-family: 'Newsreader', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        header {
-            text-align: center;
-            padding: 3rem 0;
+        .prose-custom p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
         }
-        h1 { margin-bottom: 0; color: #2c3e50; }
-        .subtitle { color: #7f8c8d; font-style: italic; }
-        section {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; font-size: 0.8rem; color: #bdc3c7; }
     </style>
 </head>
-<body>
+<title>Shubham Amrut Habib</title>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="max-w-[850px] mx-auto px-6 lg:px-8">
+<header class="flex flex-col md:flex-row items-baseline justify-between py-12 border-b border-slate-100 dark:border-slate-800 mb-16">
+<div class="flex items-baseline gap-2">
+<h1 class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+                    Shubham Amrut Habib
+                </h1>
+</div>
+<nav class="flex flex-wrap items-center gap-6 mt-6 md:mt-0">
+<div class="flex gap-6 text-sm font-medium">
+<a class="text-slate-900 dark:text-white border-b border-slate-900 dark:border-white">Home</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="research.html">Research</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="projects.html">Projects</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">CV</a>
+</div>
+<div class="flex items-center gap-4 pl-6 border-l border-slate-200 dark:border-slate-700">
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="Google Scholar">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</a>
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="ORCID">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</a>
+<a class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#" title="GitHub">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="mb-20">
+<div class="flex flex-col gap-10">
+<div class="space-y-6">
+<p class="text-3xl md:text-4xl font-light leading-snug text-slate-900 dark:text-slate-100">
+                            Climate Science Researcher at Indian Institute of Technology, Delhi. 
+                        </p>
+<div class="flex flex-col gap-1">
+<span class="text-lg font-medium text-slate-800 dark:text-slate-200">Department of Atmospheric Sciences</span>
+<span class="text-slate-500 italic">IIT Delhi, India</span>
+</div>
+</div>
+<div class="prose-custom max-w-2xl text-lg text-slate-700 dark:text-slate-300">
+<p>
+                            I specialize in understanding and predicting complex atmospheric phenomena using advanced numerical modeling and observational analysis. My work primarily focuses on the predictability of extreme weather events in a warming climate.
+                        </p>
+<p>
+                            Currently, I am investigating the multi-scale drivers of heat-waves over the Indian subcontinent, aiming to improve early warning systems and long-term climate adaptation strategies.
+                        </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-slate-900 dark:text-white font-medium border-b border-slate-200 hover:border-slate-900 dark:border-slate-700 dark:hover:border-white transition-all pb-1" href="#">
+<span>Download Curriculum Vitae</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-24">
+<h3 class="text-xs uppercase tracking-[0.2em] font-bold text-slate-400 dark:text-slate-500 mb-10">
+                    Research Interests
+                </h3>
+<ul class="grid md:grid-cols-1 gap-y-6 list-none p-0 max-w-xl">
+<li class="flex items-center gap-4 py-2 border-b border-slate-50 dark:border-slate-800">
+<span class="text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-lg">wb_sunny</span>
+</span>
+<span class="text-xl text-slate-800 dark:text-slate-200">Heat-Wave Forecasting</span>
+</li>
+<li class="flex items-center gap-4 py-2 border-b border-slate-50 dark:border-slate-800">
+<span class="text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-lg">public</span>
+</span>
+<span class="text-xl text-slate-800 dark:text-slate-200">Climate Projections</span>
+</li>
+<li class="flex items-center gap-4 py-2 border-b border-slate-50 dark:border-slate-800">
+<span class="text-slate-300 dark:text-slate-600">
+<span class="material-symbols-outlined text-lg">air</span>
+</span>
+<span class="text-xl text-slate-800 dark:text-slate-200">Atmospheric Dynamics</span>
+</li>
+</ul>
+</section>
+</main>
+<footer class="py-12 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-4">
+<div>
+                © 2026 Shubham Amrut Habib.
+            </div>
+<div class="flex gap-8">
+<a class="hover:text-slate-900 dark:hover:text-white transition-colors" href="mailto:shubham.habib@iitd.ac.in">Contact</a>
+<a class="hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Indian Institute of Technology Delhi</a>
+</div>
+</footer>
+</div>
 
-    <header>
-        <h1>Your Name</h1>
-        <p class="subtitle">Student | Developer | Enthusiast</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I am a [Your Profession/Role] based in [Your City]. I love building things and learning about [Your Interests].</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project One:</strong> A brief description of what you did. <a href="#">Link</a></li>
-            <li><strong>Project Two:</strong> Another cool thing you built. <a href="#">Link</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>You can find me on <a href="https://github.com/yourusername">GitHub</a>, 
-           <a href="https://linkedin.com/in/yourusername">LinkedIn</a>, 
-           or email me at <strong>your@email.com</strong>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name. Built with simplicity.</p>
-    </footer>
-
-</body>
-</html>
+</body></html>
